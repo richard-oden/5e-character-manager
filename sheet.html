@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.1.0/dist/css/tom-select.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Theodas | 5e Character Manager</title>
+  </head>
+  <body>
+    <header class="border-bottom">
+        <div class="row align-center">
+            <img class="char-avatar" src="char_avatar.jpg">
+            <div class="col">
+                <span class="font-m">Theodas Aldevir</span>
+                <span>High Elf Wizard, 16</span>
+            </div>
+            <div></div>
+        </div>
+        <nav>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="#">Edit</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Switch Characters</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="row justify-between border-bottom">
+            <div class="col align-center justify-between border-right flex-grow">
+                <span class="font-sm">STR</span>
+                <div class="font-m">
+                    <span>0</span>/<span>2</span>
+                </div>
+                <span class="font-sm">10</span>
+            </div>
+            <div class="col align-center justify-between border-right flex-grow">
+                <span class="font-sm">DEX</span>
+                <div class="font-m">
+                    <span>3</span>/<span>5</span>
+                </div>
+                <span class="font-sm">16</span>
+            </div>
+            <div class="col align-center justify-between border-right flex-grow">
+                <span class="font-sm">CON</span>
+                <div class="font-m">
+                    <span>4</span>/<span class="prof">11</span>
+                </div>
+                <span class="font-sm">18</span>
+            </div>
+            <div class="col align-center justify-between border-right flex-grow">
+                <span class="font-sm">INT</span>
+                <div class="font-m">
+                    <span>6</span>/<span class="prof">12</span>
+                </div>
+                <span class="font-sm">22</span>
+            </div>
+            <div class="col align-center justify-between border-right flex-grow">
+                <span class="font-sm">WIS</span>
+                <div class="font-m">
+                    <span>1</span>/<span class="prof">8</span>
+                </div>
+                <span class="font-sm">12</span>
+            </div>
+            <div class="col align-center justify-between border-right flex-grow">
+                <span class="font-sm">CHA</span>
+                <div class="font-m">
+                    <span>-1</span>/<span>1</span>
+                </div>
+                <span class="font-sm">8</span>
+            </div>
+        </section>
+        <section class="row justify-between border-bottom">
+            <div class="col align-center justify-between border-right flex-grow">
+                <span class="font-sm">HP</span>
+                <div class="font-m">130</div>
+                <span class="font-sm">134</span>
+            </div>
+            <div class="col align-center justify-between border-right flex-grow">
+                <span class="font-sm">Hit Dice</span>
+                <div class="font-m">14</div>
+                <span class="font-sm">16d6</span>
+            </div>
+            <div class="col align-center justify-center border-right flex-grow">
+                <span class="font-sm">AC</span>
+                <div class="font-m">15</div>
+            </div>
+            <div class="col align-center justify-center border-right flex-grow">
+                <span class="font-sm">Initiative</span>
+                <div class="font-m">3</div>
+            </div>
+        </section>
+        <section class="row justify-between border-bottom">
+            <div class="col align-center justify-center border-right flex-grow">
+                <span class="font-sm">Proficiency</span>
+                <div class="font-m">5</div>
+            </div>
+            <div class="col align-center justify-center border-right flex-grow">
+                <span class="font-sm">Speed</span>
+                <div class="font-m">30</div>
+            </div>
+            <div class="col align-center justify-center border-right flex-grow">
+                <span class="font-sm">Death Saves</span>
+                <div class="font-m">0</div>
+            </div>
+            <div class="col align-center justify-center border-right flex-grow">
+                <span class="font-sm">Inspiration</span>
+                <div class="font-m">1</div>
+            </div>
+        </section>
+        <section class="col bordered margin-bottom-2">
+            <input id="skills-collapsible" class="collapsible-toggle" type="checkbox">
+            <label for="skills-collapsible" class="collapsible-label">Skills</label>
+            <div class="collapsible-content col">
+                <div class="row">
+                    <input type="search" class="flex-grow margin-right-1">
+
+                    <input id="proficient-skills-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="proficient-skills-toggle" class="toggle-button-label icon-only margin-right-1">
+                        <i class="mdi mdi-alpha-p-circle font-m title="Proficient"></i>
+                    </label>
+
+                    <input id="expert-skills-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="expert-skills-toggle" class="toggle-button-label icon-only">
+                        <i class="mdi mdi-alpha-e-circle font-m title="Expert"></i>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="col bordered margin-bottom-2">
+            <input id="actions-collapsible" class="collapsible-toggle" type="checkbox">
+            <label for="actions-collapsible" class="collapsible-label">Actions</label>
+            <div class="collapsible-content col">
+                <div class="row">
+                    <input type="search" class="flex-grow margin-right-1">
+
+                    <input id="action-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="action-toggle" class="toggle-button-label icon-only margin-right-1">
+                        <i class="mdi mdi-alpha-a-circle font-m" title="Actions"></i>
+                    </label>
+
+                    <input id="bonus-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="bonus-toggle" class="toggle-button-label icon-only margin-right-1">
+                        <i class="mdi mdi-alpha-b-circle font-m" title="Bonus Actions"></i>
+                    </label>
+                    
+                    <input id="reaction-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="reaction-toggle" class="toggle-button-label icon-only">
+                        <i class="mdi mdi-alpha-r-circle font-m title="Reactions"></i>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="col bordered margin-bottom-2">
+            <input id="spells-collapsible" class="collapsible-toggle" type="checkbox">
+            <label for="spells-collapsible" class="collapsible-label">Spells</label>
+            <div class="collapsible-content col">
+                <div class="row">
+                    <input type="search" class="flex-grow margin-right-1">
+
+                    <select id="spells-filter" class="tom-select" multiple autocomplete="off">
+                        <optgroup label="Level">
+                            <option value="0">Cantrip</option>
+                            <option value="1">First Level</option>
+                            <option value="2">Second Level</option>
+                            <option value="3">Third Level</option>
+                            <option value="4">Fourth Level</option>
+                            <option value="5">Fifth Level</option>
+                            <option value="6">Sixth Level</option>
+                            <option value="7">Seventh Level</option>
+                            <option value="8">Eighth Level</option>
+                            <option value="9">Ninth Level</option>
+                        </optgroup>
+                        <optgroup label="School">
+                            <option>Abjuration</option>
+                            <option>Conjuration</option>
+                            <option>Divination</option>
+                            <option>Enchantment</option>
+                            <option>Evocation</option>
+                            <option>Illusion</option>
+                            <option>Necromancy</option>
+                            <option>Illusion</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="col bordered margin-bottom-2">
+            <input id="items-collapsible" class="collapsible-toggle" type="checkbox">
+            <label for="items-collapsible" class="collapsible-label">Items</label>
+            <div class="collapsible-content col">
+                <div class="row align-center margin-bottom-1 font-sm">
+                    <span class="margin-right-2"><i class="currency-icon platinum margin-right-1"></i>800</span>
+                    <span class="margin-right-2"><i class="currency-icon gold margin-right-1"></i>800</span>
+                    <span class="margin-right-2"><i class="currency-icon electrum margin-right-1"></i>800</span>
+                    <span class="margin-right-2"><i class="currency-icon silver margin-right-1"></i>800</span>
+                    <span class="margin-right-2"><i class="currency-icon copper margin-right-1"></i>800</span>
+                </div>
+                <div class="row">
+                    <input type="search" class="flex-grow margin-right-1">
+
+                    <input id="weapons-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="weapons-toggle" class="toggle-button-label margin-right-1">
+                        <i class="ra ra-crossed-swords" title="Weapons"></i>
+                    </label>
+
+                    <input id="armor-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="armor-toggle" class="toggle-button-label margin-right-1">
+                        <i class="ra ra-helmet" title="Armor"></i>
+                    </label>
+                    
+                    <input id="misc-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="misc-toggle" class="toggle-button-label margin-right-1">
+                        <i class="mdi mdi-ring" title="Miscellaneous"></i>
+                    </label>
+
+                    <input id="attunement-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="attunement-toggle" class="toggle-button-label">
+                        <i class="mdi mdi-link-variant" title="Attunement"></i>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="col bordered margin-bottom-2">
+            <input id="notes-collapsible" class="collapsible-toggle" type="checkbox">
+            <label for="notes-collapsible" class="collapsible-label">Notes</label>
+            <div class="collapsible-content col">
+                <div class="row">
+                    <input type="search" class="flex-grow margin-right-1">
+
+                    <input id="proficient-skills-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="proficient-skills-toggle" class="toggle-button-label icon-only margin-right-1">
+                        <i class="mdi mdi-alpha-p-circle font-m title="Proficient"></i>
+                    </label>
+
+                    <input id="expert-skills-toggle" type="checkbox" class="toggle-button-input">
+                    <label for="expert-skills-toggle" class="toggle-button-label icon-only">
+                        <i class="mdi mdi-alpha-e-circle font-m title="Expert"></i>
+                    </label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.1.0/dist/js/tom-select.complete.min.js"></script>
+	<script src="sheet.js"></script>
+  </body>
+</html>
