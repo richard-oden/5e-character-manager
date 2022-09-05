@@ -1,20 +1,13 @@
 <script>
-    Object.prototype.mapObject = callbackFunction => Object.fromEntries(
-        Object.entries(this).map(callbackFunction));
+    const mapObject = (obj, callbackFn) => Object.fromEntries(
+        Object.entries(obj).map(callbackFn));
 
-    const abilityScores = {
-        STR: 10,
-        DEX: 16,
-        CON: 18,
-        INT: 22,
-        WIS: 12,
-        CHA: 8
-    };
-    const proficiencyBonus = 5;
-    const proficientSaves = ['CON', 'INT', 'WIS'];
+    export let abilityScores;
+    export let proficiencyBonus;
+    export let proficientSaves;
 
-    $: abilityScoreBonuses = abilityScores.mapObject(([k, v]) => [k, (v - 10) / 2]);
-    $: savingThrows = abilityScoreBonuses.mapObject(([k, v]) => [k, proficientSaves.includes(k) ? v + proficiencyBonus : v]);
+    $: abilityScoreBonuses = mapObject(abilityScores, ([k, v]) => [k, (v - 10) / 2]);
+    $: savingThrows = mapObject(abilityScoreBonuses, ([k, v]) => [k, proficientSaves.includes(k) ? v + proficiencyBonus : v]);
 
 </script>
 
