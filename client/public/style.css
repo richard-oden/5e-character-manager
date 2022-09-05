@@ -180,6 +180,23 @@
     background: none;
 }
 
+.action-row {
+    display: grid;
+    grid-template-columns: 40% 5% 20% 15% 5%;
+    align-items: center;
+    gap: .5rem;
+}
+
+.action-type-icon {
+    border: 1px solid var(--foreground);
+    border-radius: 50%;
+    font-style: normal;
+    width: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    user-select: none;
+}
+
 .currency-icon {
     display: inline-block;
     height: .5rem;
