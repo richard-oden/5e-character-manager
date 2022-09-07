@@ -4,10 +4,20 @@
 
     export let abilityScores;
     export let proficiencyBonus;
-    export let proficientSaves;
+    export let savingThrows;
 
     $: abilityScoreBonuses = mapObject(abilityScores, ([k, v]) => [k, (v - 10) / 2]);
-    $: savingThrows = mapObject(abilityScoreBonuses, ([k, v]) => [k, proficientSaves.includes(k) ? v + proficiencyBonus : v]);
+    $: savingThrowBonuses = mapObject(abilityScoreBonuses, ([k, v]) => {
+        const savingThrow = savingThrows.find(savingThrow => savingThrow.ability === k);
+
+        if (savingThrow?.proficiency === 1)
+            return [k, v + proficiencyBonus];
+
+        if (savingThrow?.proficiency === 2)
+            return [k, v + (proficiencyBonus * 2)];
+
+        return [k, v];
+    });
 
 </script>
 
@@ -17,7 +27,7 @@
             <span class="font-sm">{name}</span>
             <div class="font-m">
                 <span>{abilityScoreBonuses[name]}</span>/
-                <span class={proficientSaves.includes(name) ? 'prof' : ''}>{savingThrows[name]}</span>
+                <span>{savingThrowBonuses[name]}</span>
             </div>
             <span class="font-sm">{score}</span>
         </div>
