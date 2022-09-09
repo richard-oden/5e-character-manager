@@ -1,5 +1,5 @@
+import jinja2
 from flask import Flask, render_template
-import random
 
 app = Flask(__name__, template_folder='client/public')
 
@@ -14,14 +14,32 @@ def base():
         "race": "High Elf",
         "alignment": "Lawful Good",
         "level": 16,
-        "abilityScores": {
-            "STR": 10,
-            "DEX": 16,
-			"CON": 18,
-			"INT": 22,
-			"WIS": 12,
-			"CHA": 8
-        },
+        "abilities": [
+            {
+                "name": "STR",
+                "score": 10
+            },
+            {
+                "name": "DEX",
+                "score": 16
+            },
+            {
+                "name": "CON",
+                "score": 18
+            },
+            {
+                "name": "INT",
+                "score": 22
+            },
+            {
+                "name": "WIS",
+                "score": 12
+            },
+            {
+                "name": "CHA",
+                "score": 8
+            }
+        ],
         "proficiencyBonus": 5,
         "savingThrows": [
             {
