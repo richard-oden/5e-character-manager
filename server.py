@@ -45,15 +45,15 @@ def base():
         "savingThrows": [
             {
                 "ability": "CON",
-                "proficiency": Proficiency.PROFICIENT
+                "proficiency": Proficiency.PROFICIENT.value
             },
             {
                 "ability": "INT",
-                "proficiency": Proficiency.PROFICIENT
+                "proficiency": Proficiency.PROFICIENT.value
             },
             {
                 "ability": "WIS",
-                "proficiency": Proficiency.PROFICIENT
+                "proficiency": Proficiency.PROFICIENT.value
             }
         ],
         "hitPoints": {
@@ -76,92 +76,92 @@ def base():
             {
                 "name": 'Acrobatics',
                 "ability": 'DEX',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Animal Handling',
                 "ability": 'WIS',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Arcana',
                 "ability": 'INT',
-                "proficiency": Proficiency.PROFICIENT
+                "proficiency": Proficiency.PROFICIENT.value
             },
             {
                 "name": 'Athletics',
                 "ability": 'STR',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Deception',
                 "ability": 'CHA',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'History',
                 "ability": 'INT',
-                "proficiency": Proficiency.PROFICIENT
+                "proficiency": Proficiency.PROFICIENT.value
             },
             {
                 "name": 'Insight',
                 "ability": 'WIS',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Initimidation',
                 "ability": 'CHA',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Investigation',
                 "ability": 'INT',
-                "proficiency": Proficiency.PROFICIENT
+                "proficiency": Proficiency.PROFICIENT.value
             },
             {
                 "name": 'Medicine',
                 "ability": 'WIS',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Nature',
                 "ability": 'INT',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Perception',
                 "ability": 'WIS',
-                "proficiency": Proficiency.PROFICIENT
+                "proficiency": Proficiency.PROFICIENT.value
             },
             {
                 "name": 'Performance',
                 "ability": 'CHA',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Persuasion',
                 "ability": 'CHA',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Religion',
                 "ability": 'INT',
-                "proficiency": Proficiency.PROFICIENT
+                "proficiency": Proficiency.PROFICIENT.value
             },
             {
                 "name": 'Sleight of Hand',
                 "ability": 'DEX',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Stealth',
                 "ability": 'DEX',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
             {
                 "name": 'Survival',
                 "ability": 'WIS',
-                "proficiency": Proficiency.NONE
+                "proficiency": Proficiency.NONE.value
             },
         ],
         "miscProficiencies": {
