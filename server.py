@@ -1,5 +1,6 @@
 import jinja2
 from flask import Flask, render_template
+from enums.Proficiency import Proficiency
 
 app = Flask(__name__, template_folder='client/public')
 
@@ -44,15 +45,15 @@ def base():
         "savingThrows": [
             {
                 "ability": "CON",
-                "proficiency": 1
+                "proficiency": Proficiency.PROFICIENT
             },
             {
                 "ability": "INT",
-                "proficiency": 1
+                "proficiency": Proficiency.PROFICIENT
             },
             {
                 "ability": "WIS",
-                "proficiency": 1
+                "proficiency": Proficiency.PROFICIENT
             }
         ],
         "hitPoints": {
@@ -71,6 +72,98 @@ def base():
         "speed": 30,
         "deathSaves": 0,
         "inspiration": 0,
+        "skills": [
+            {
+                "name": 'Acrobatics',
+                "ability": 'DEX',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Animal Handling',
+                "ability": 'WIS',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Arcana',
+                "ability": 'INT',
+                "proficiency": Proficiency.PROFICIENT
+            },
+            {
+                "name": 'Athletics',
+                "ability": 'STR',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Deception',
+                "ability": 'CHA',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'History',
+                "ability": 'INT',
+                "proficiency": Proficiency.PROFICIENT
+            },
+            {
+                "name": 'Insight',
+                "ability": 'WIS',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Initimidation',
+                "ability": 'CHA',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Investigation',
+                "ability": 'INT',
+                "proficiency": Proficiency.PROFICIENT
+            },
+            {
+                "name": 'Medicine',
+                "ability": 'WIS',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Nature',
+                "ability": 'INT',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Perception',
+                "ability": 'WIS',
+                "proficiency": Proficiency.PROFICIENT
+            },
+            {
+                "name": 'Performance',
+                "ability": 'CHA',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Persuasion',
+                "ability": 'CHA',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Religion',
+                "ability": 'INT',
+                "proficiency": Proficiency.PROFICIENT
+            },
+            {
+                "name": 'Sleight of Hand',
+                "ability": 'DEX',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Stealth',
+                "ability": 'DEX',
+                "proficiency": Proficiency.NONE
+            },
+            {
+                "name": 'Survival',
+                "ability": 'WIS',
+                "proficiency": Proficiency.NONE
+            },
+        ],
         "miscProficiencies": {
             "languages": ["Common", "Elvish", "Sylvan", "Draconic", "Celestial", "Infernal"],
             "tools": ["Tinkerer's Tools"],
